@@ -1,0 +1,20 @@
+{
+  "Layout": {
+    "NavigationBar": {
+      "home": "Home",
+      "books": "Books",
+      "categories": "Categories",
+      "releases": "Releases",
+      "about": "About"
+    },
+    "alt": {
+      "search": "Search",
+      "user": "User",
+      "cart": "Shopping cart"
+    },
+    "auth": {
+      "signUp": "Create an account",
+      "signIn": "Sign in"
+    }
+  }
+}

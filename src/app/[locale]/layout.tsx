@@ -13,6 +13,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 // CSS & Utils
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { NavigationBar } from "@/components/layout/header";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -61,7 +62,10 @@ export default async function RootLayout({ children, params }: Props) {
           forcedTheme="light"
           enableSystem={false}
         >
-          <NextIntlClientProvider>{children}</NextIntlClientProvider>
+          <NextIntlClientProvider>
+            <NavigationBar />
+            {children}
+          </NextIntlClientProvider>
         </ThemeProvider>
       </body>
     </html>

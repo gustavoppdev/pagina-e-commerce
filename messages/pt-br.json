@@ -1,0 +1,22 @@
+{
+  "Layout": {
+    "NavigationBar": {
+      "links": {
+        "home": "Início",
+        "books": "Livros",
+        "categories": "Categorias",
+        "releases": "Lançamentos",
+        "about": "Sobre"
+      },
+      "alt": {
+        "search": "Buscar",
+        "user": "Usuário",
+        "cart": "Carrinho de compras"
+      },
+      "auth": {
+        "signUp": "Criar uma conta",
+        "signIn": "Entrar"
+      }
+    }
+  }
+}
