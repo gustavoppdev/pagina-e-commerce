@@ -16,7 +16,7 @@ import NavCategories from "./NavCategories";
 
 // Icons & Constants
 import { Menu } from "lucide-react";
-import { NavigationBarLinks } from "@/app/constants";
+import { NavigationBarLinks } from "@/constants";
 
 const NavigationBarMobile = () => {
   const t = useTranslations("Layout.NavigationBar");

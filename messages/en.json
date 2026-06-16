@@ -1,20 +1,30 @@
 {
   "Layout": {
     "NavigationBar": {
-      "home": "Home",
-      "books": "Books",
-      "categories": "Categories",
-      "releases": "Releases",
-      "about": "About"
-    },
-    "alt": {
-      "search": "Search",
-      "user": "User",
-      "cart": "Shopping cart"
-    },
-    "auth": {
-      "signUp": "Create an account",
-      "signIn": "Sign in"
+      "links": {
+        "home": "Home",
+        "books": "Books",
+        "categories": "Categories",
+        "releases": "Releases",
+        "about": "About"
+      },
+      "alt": {
+        "search": "Search",
+        "user": "User",
+        "cart": "Shopping cart"
+      },
+      "auth": {
+        "signUp": "Create an account",
+        "signIn": "Sign in"
+      }
+    }
+  },
+  "Sections": {
+    "Hero": {
+      "subtitle": "More than books, experiences",
+      "title": "Books that inspire new stories.",
+      "description": "A curated selection of physical books for those who appreciate the weight of paper, the beauty of editions, and the time of a good read.",
+      "button": "Explore Curation"
     }
   }
 }

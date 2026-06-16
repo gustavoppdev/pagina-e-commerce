@@ -19,7 +19,7 @@ import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 
 // Constants
-import { CategoriesPlaceholder } from "@/app/constants";
+import { CategoriesPlaceholder } from "@/constants/index";
 
 type Props = {
   layout: "desktop" | "mobile";

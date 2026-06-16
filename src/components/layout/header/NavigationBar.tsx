@@ -7,7 +7,7 @@ import NavIcons from "./NavIcons";
 import NavCategories from "./NavCategories";
 
 // Constants
-import { NavigationBarLinks } from "@/app/constants";
+import { NavigationBarLinks } from "@/constants";
 
 const NavigationBar = () => {
   const t = useTranslations("Layout.NavigationBar.links");
