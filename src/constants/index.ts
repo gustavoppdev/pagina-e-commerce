@@ -1,6 +1,5 @@
 import { Package, RefreshCcw, ShieldCheck, Truck } from "lucide-react";
 import { NavbarLinks, Stat } from "../types";
-import { bookIcon, giftIcon, sheetIcon, truckIcon } from "@/assets";
 
 export const NavigationBarLinks: NavbarLinks[] = [
   {
