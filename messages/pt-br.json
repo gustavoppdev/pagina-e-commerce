@@ -25,6 +25,24 @@
       "title": "Livros que inspiram novas histórias.",
       "description": "Uma curadoria de livros físicos feita para quem aprecia o peso do papel, a beleza das edições e o tempo de uma boa leitura.",
       "button": "Explorar Curadoria"
+    },
+    "Stats": {
+      "shipping": {
+        "title": "Frete Grátis",
+        "description": "Para compras acima de R$199,00"
+      },
+      "secure": {
+        "title": "Pagamento Seguro",
+        "description": "Ambiente 100% seguro e criptografado"
+      },
+      "packaging": {
+        "title": "Embalagem Cuidadosa",
+        "description": "Livros bem protegidos para chegar perfeitos"
+      },
+      "returns": {
+        "title": "Troca Fácil",
+        "description": "Até 7 dias após o recebimento do pedido"
+      }
     }
   }
 }

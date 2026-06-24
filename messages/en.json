@@ -25,6 +25,24 @@
       "title": "Books that inspire new stories.",
       "description": "A curated selection of physical books for those who appreciate the weight of paper, the beauty of editions, and the time of a good read.",
       "button": "Explore Curation"
+    },
+    "Stats": {
+      "shipping": {
+        "title": "Free Shipping",
+        "description": "For orders over R$199,00 at checkout"
+      },
+      "secure": {
+        "title": "Secure Payment",
+        "description": "100% secure and encrypted environment"
+      },
+      "packaging": {
+        "title": "Careful Packaging",
+        "description": "Books well protected to arrive in perfect condition"
+      },
+      "returns": {
+        "title": "Easy Returns",
+        "description": "Up to 7 days after receiving the order"
+      }
     }
   }
 }
