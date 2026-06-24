@@ -1,4 +1,6 @@
-import { NavbarLinks } from "../types";
+import { Package, RefreshCcw, ShieldCheck, Truck } from "lucide-react";
+import { NavbarLinks, Stat } from "../types";
+import { bookIcon, giftIcon, sheetIcon, truckIcon } from "@/assets";
 
 export const NavigationBarLinks: NavbarLinks[] = [
   {
@@ -30,4 +32,27 @@ export const CategoriesPlaceholder: string[] = [
   "Ficção Científica",
   "Horror",
   "História",
+];
+
+export const StatsArray: Stat[] = [
+  {
+    titleKey: "shipping.title",
+    descriptionKey: "shipping.description",
+    icon: Truck,
+  },
+  {
+    titleKey: "secure.title",
+    descriptionKey: "secure.description",
+    icon: ShieldCheck,
+  },
+  {
+    titleKey: "packaging.title",
+    descriptionKey: "packaging.description",
+    icon: Package,
+  },
+  {
+    titleKey: "returns.title",
+    descriptionKey: "returns.description",
+    icon: RefreshCcw,
+  },
 ];
