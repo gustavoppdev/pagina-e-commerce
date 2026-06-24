@@ -1,55 +1,52 @@
 // Next.js & Next-Intl
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 // Components
 import { Button } from "@/components/ui/button";
 
-// Assets & Icons
+// Assets
 import { heroImg } from "@/assets";
-import { ArrowRight } from "lucide-react";
-import { useTranslations } from "next-intl";
 
 const Hero = () => {
   const t = useTranslations("Sections.Hero");
 
   return (
-    <section className="relative  min-h-[calc(100dvh-65px)] lg:min-h-[calc(100dvh-84px)]">
-      {/* Background */}
-      <div className="absolute inset-0 -z-10 w-full">
-        <Image
-          src={heroImg}
-          alt=""
-          fill
-          sizes="100vw"
-          priority
-          fetchPriority="high"
-          quality={100}
-          className="object-cover"
-        />
-      </div>
-
-      {/* Overlay */}
-      <div className="absolute inset-0 -z-10 bg-linear-to-r from-white to-white/15 md:to-transparent md:via-transparent backdrop-blur-[2px] sm:backdrop-blur-none" />
-
-      {/* Content */}
-      <div className="grid min-h-[inherit] grid-cols-1 lg:grid-cols-2 items-center section-container ">
-        <div className="max-w-md lg:max-w-xl flex flex-col gap-8">
-          <p className="text-sm uppercase tracking-widest text-muted-foreground">
+    <section className="relative bg-[#FEFEFE]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 section-container items-center py-20 lg:py-0">
+        {/* Content */}
+        <div className="flex flex-col gap-10 items-center text-center md:items-start md:text-start max-w-md lg:max-w-136 mx-auto text-pretty">
+          <span className="text-sm uppercase tracking-widest text-muted-foreground">
             {t("subtitle")}
-          </p>
+          </span>
 
-          <h1 className="font-semibold tracking-tight leading-[0.92] text-5xl md:text-6xl xl:text-7xl">
+          <h1 className="font-semibold tracking-tight leading-[1.05] text-5xl md:text-6xl xl:text-7xl">
             {t("title")}
           </h1>
 
-          <p className="max-w-sm lg:max-w-md leading-relaxed text-black/75">
+          <span aria-hidden={true} className="h-px w-10 bg-foreground block" />
+
+          <p className="max-w-sm lg:max-w-md leading-relaxed text-muted-foreground text-lg">
             {t("description")}
           </p>
 
           <Button className="h-12 w-fit rounded-none px-8 uppercase tracking-wider">
             {t("button")}
-            <ArrowRight className="ml-2 size-4" />
           </Button>
+        </div>
+
+        {/* Image */}
+        <div className="relative aspect-561/701 max-w-md lg:max-w-none">
+          <Image
+            src={heroImg}
+            placeholder="blur"
+            alt=""
+            fill
+            sizes="(max-width: 640px) calc(100vw - 16px), (max-width: 768px) 448px,(max-width: 1024px) 348px, (max-width: 1280px) 452px, (max-width: 1536px) 540px, 668px"
+            className="object-cover"
+            priority
+            fetchPriority="high"
+          />
         </div>
       </div>
     </section>
